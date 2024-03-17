@@ -1,7 +1,7 @@
-const { Sequelize } = require("sequelize");
-const mysql = require('mysql');
+import { Sequelize } from "sequelize";
+import { createConnection } from 'mysql';
 
-const conn = mysql.createConnection({
+const conn = createConnection({
     host: 'localhost',
     port:"3306",
     user: 'root',
@@ -17,4 +17,4 @@ conn.connect((err) => {
       console.log('Connexion à la base de données réussie');
 });
 
-module.exports = conn;
+module.exports=conn

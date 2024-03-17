@@ -58,4 +58,4 @@ conn.sync()
     .catch(err => {
         console.error("Erreur lors de la création de la table 'users':", err);
     });
-export default Users;
+// export default Users;
